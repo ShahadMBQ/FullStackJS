@@ -43,7 +43,10 @@ app.post("/process-image", upload.single("image"), (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
+const { add, subtract } = require('./utilities/mathUtils');
 
+console.log("add",add(1,5))
+console.log(subtract(5, 3))
 //  For Uploading:
 // Set the URL to http://localhost:3000/upload.
 // In the Body tab, select form-data.
